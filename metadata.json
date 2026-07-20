@@ -1,0 +1,17 @@
+{
+  "name": "Window focus animate",
+  "description": "聚焦动画风格可选：Kwin 风格 = 失焦窗口被推到一边停留露出边框（焦点切回 / 悬停露边 / 延时自动三种回位）；线性上升 = 新聚焦窗口线性上升到位（距离与时长可调）。",
+  "uuid": "window-focus-slide@sky_is_calling",
+  "settings-schema": "org.gnome.shell.extensions.window-focus-slide",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "url": "",
+  "version": 2,
+  "author": "sky_is_calling"
+}

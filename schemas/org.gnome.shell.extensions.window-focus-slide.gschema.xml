@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <enum id="org.gnome.shell.extensions.window-focus-slide.Direction">
+    <value value="0" nick="auto"/>
+    <value value="1" nick="bottom-right"/>
+    <value value="2" nick="bottom-left"/>
+    <value value="3" nick="top-right"/>
+    <value value="4" nick="top-left"/>
+  </enum>
+
+  <enum id="org.gnome.shell.extensions.window-focus-slide.FocusBumpStyle">
+    <value value="0" nick="kwin"/>
+    <value value="1" nick="rise"/>
+    <value value="2" nick="zoom"/>
+  </enum>
+
+  <enum id="org.gnome.shell.extensions.window-focus-slide.FocusBumpEasing">
+    <value value="0" nick="linear"/>
+    <value value="1" nick="ease-in"/>
+    <value value="2" nick="ease-out"/>
+  </enum>
+
+  <schema id="org.gnome.shell.extensions.window-focus-slide"
+          path="/org/gnome/shell/extensions/window-focus-slide/">
+    <key name="offset-px" type="i">
+      <default>48</default>
+      <summary>偏移距离</summary>
+      <description>失焦窗口被推开后停留的位移（像素）。</description>
+    </key>
+    <key name="duration-ms" type="i">
+      <default>200</default>
+      <summary>动画时长</summary>
+      <description>平移 / 回位动画的持续时间（毫秒），指数缓动。</description>
+    </key>
+    <key name="direction" enum="org.gnome.shell.extensions.window-focus-slide.Direction">
+      <default>'auto'</default>
+      <summary>推开方向</summary>
+      <description>auto = 远离当前焦点窗口的方向；其余为固定角落方向。</description>
+    </key>
+    <key name="enabled" type="b">
+      <default>true</default>
+      <summary>启用</summary>
+      <description>关闭后停止所有动画并立即还原窗口位置。</description>
+    </key>
+    <key name="focus-bump-style" enum="org.gnome.shell.extensions.window-focus-slide.FocusBumpStyle">
+      <default>'kwin'</default>
+      <summary>聚焦动画风格</summary>
+      <description>聚焦时的动画风格。kwin = 仿 Kwin 主动画（失焦窗口被推开停留露出边框）；rise = 新聚焦窗口线性上升。</description>
+    </key>
+    <key name="focus-bump-distance" type="i">
+      <default>4</default>
+      <summary>上升距离</summary>
+      <description>rise 风格下新聚焦窗口线性上升的像素距离（0 = 不上升）。</description>
+      <range min="0" max="100"/>
+    </key>
+    <key name="focus-bump-duration" type="i">
+      <default>200</default>
+      <summary>上升动画时长</summary>
+      <description>rise 风格下新聚焦窗口线性上升的持续时间（毫秒，0 = 瞬时）。</description>
+      <range min="0" max="1500"/>
+    </key>
+    <key name="focus-bump-easing" enum="org.gnome.shell.extensions.window-focus-slide.FocusBumpEasing">
+      <default>'linear'</default>
+      <summary>上升缓动曲线</summary>
+      <description>rise 风格下新聚焦窗口上升的缓动曲线。linear = 匀速；ease-in = 先慢后快；ease-out = 先快后慢。</description>
+    </key>
+    <key name="focus-zoom-shrink" type="d">
+      <default>0.9</default>
+      <summary>缩小比例</summary>
+      <description>缩放风格下，窗口被聚焦瞬间缩小的比例（1.0 = 不缩小，0.9 = 缩到 90%）。仅缩小是瞬间的，放大回原样用下方动画时间 / 缓动。</description>
+      <range min="0.1" max="1.0"/>
+    </key>
+    <key name="focus-zoom-duration" type="i">
+      <default>200</default>
+      <summary>放大动画时长</summary>
+      <description>缩放风格下，窗口从缩小态放大回原样的持续时间（毫秒，0 = 瞬时）。</description>
+      <range min="0" max="1500"/>
+    </key>
+    <key name="focus-zoom-easing" enum="org.gnome.shell.extensions.window-focus-slide.FocusBumpEasing">
+      <default>'linear'</default>
+      <summary>放大缓动曲线</summary>
+      <description>缩放风格下，窗口放大回原样过程的缓动曲线（仅用于放大过程，缩小是瞬间的）。linear = 匀速；ease-in = 先慢后快；ease-out = 先快后慢。</description>
+    </key>
+    <key name="auto-return-ms" type="i">
+      <default>0</default>
+      <summary>延时自动回位</summary>
+      <description>失焦窗口被推开后，等待这么多毫秒就自动平滑滑回原位（仍保持失焦）。0 = 不自动回位，一直停留到焦点切回或悬停。</description>
+    </key>
+    <key name="hover-return" type="b">
+      <default>true</default>
+      <summary>悬停露出边缘回位</summary>
+      <description>加分项：鼠标从窗口外进入失焦窗口露出的边缘时，把它滑回原位。关闭则只在焦点切回时回位。</description>
+    </key>
+  </schema>
+</schemalist>
