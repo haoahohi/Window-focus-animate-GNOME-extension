@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: window-focus-slide@sky_is_calling\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-20 13:07+0800\n"
+"POT-Creation-Date: 2026-07-20 20:59+0800\n"
 "PO-Revision-Date: 2026-07-20 13:07+0800\n"
 "Last-Translator: sky_is_calling\n"
 "Language-Team: Chinese (Simplified) <>\n"
@@ -17,148 +17,142 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: prefs.js:19 prefs.js:55
+#: prefs.js:19 prefs.js:46
 msgid "Kwin style"
 msgstr "Kwin 风格"
 
-#: prefs.js:20 prefs.js:73
+#: prefs.js:20 prefs.js:61
 msgid "Linear rise"
 msgstr "线性上升"
 
-#: prefs.js:21 prefs.js:87
+#: prefs.js:21 prefs.js:75
 msgid "Zoom"
 msgstr "缩放"
 
 #: prefs.js:26
-msgid "Auto (away from focused window)"
-msgstr "自动（远离焦点窗口）"
-
-#: prefs.js:27
-msgid "Bottom-right"
-msgstr "右下"
-
-#: prefs.js:28
-msgid "Bottom-left"
-msgstr "左下"
-
-#: prefs.js:29
-msgid "Top-right"
-msgstr "右上"
-
-#: prefs.js:30
-msgid "Top-left"
-msgstr "左上"
-
-#: prefs.js:35
 msgid "Linear (constant speed)"
 msgstr "线性（匀速）"
 
-#: prefs.js:36
+#: prefs.js:27
 msgid "Ease-in (slow then fast)"
 msgstr "先慢后快"
 
-#: prefs.js:37
+#: prefs.js:28
 msgid "Ease-out (fast then slow)"
 msgstr "先快后慢"
 
-#: prefs.js:41
+#: prefs.js:32
 msgid "Focus push"
 msgstr "聚焦推移"
 
-#: prefs.js:46
+#: prefs.js:37
 msgid "General"
 msgstr "通用"
 
-#: prefs.js:49
+#: prefs.js:40
 msgid "Focus animation style"
 msgstr "聚焦动画风格"
 
-#: prefs.js:51
+#: prefs.js:42
 msgid "Enable"
 msgstr "启用"
 
-#: prefs.js:56
+#: prefs.js:47
 msgid ""
 "The unfocused window is pushed aside and stays, revealing its edge; it "
 "returns on focus-back / hover over the revealed edge / timed auto-return."
 msgstr ""
-"失焦窗口被推到一边停留，露出它的边缘；焦点切回 / 悬停露出边缘 / 延时自动三种方式回位。"
+"失焦窗口被推到一边停留，露出它的边缘；焦点切回 / 悬停露出边缘 / 延时自动三种"
+"方式回位。"
 
-#: prefs.js:60
+#: prefs.js:51
 msgid "Offset distance"
 msgstr "偏移距离"
 
-#: prefs.js:60
+#: prefs.js:51
 msgid "pixels"
 msgstr "像素"
 
-#: prefs.js:62
+#: prefs.js:53
 msgid "Animation duration"
 msgstr "动画时长"
 
-#: prefs.js:62
+#: prefs.js:53
 msgid "milliseconds"
 msgstr "毫秒"
 
-#: prefs.js:64
+#: prefs.js:55
 msgid "Timed auto return"
 msgstr "延时自动回位"
 
-#: prefs.js:64
+#: prefs.js:55
 msgid "milliseconds (0=off)"
 msgstr "毫秒（0=关）"
 
-#: prefs.js:66
-msgid "Push direction"
-msgstr "推开方向"
-
-#: prefs.js:69
+#: prefs.js:57
 msgid "Return on hover over revealed edge"
 msgstr "悬停露出边缘回位"
 
-#: prefs.js:74
+#: prefs.js:62
 msgid "The newly focused window rises into place along the chosen curve."
 msgstr "新聚焦窗口按所选曲线上升到位。"
 
-#: prefs.js:78
+#: prefs.js:66
 msgid "Rise distance"
 msgstr "上升距离"
 
-#: prefs.js:78
+#: prefs.js:66
 msgid "pixels (0=none)"
 msgstr "像素（0=无）"
 
-#: prefs.js:80
+#: prefs.js:68
 msgid "Rise animation duration"
 msgstr "上升动画时长"
 
-#: prefs.js:80 prefs.js:94
+#: prefs.js:68 prefs.js:82
 msgid "milliseconds (0=instant)"
 msgstr "毫秒（0=瞬时）"
 
-#: prefs.js:82
+#: prefs.js:70
 msgid "Rise easing curve"
 msgstr "上升缓动曲线"
 
-#: prefs.js:88
+#: prefs.js:76
 msgid ""
 "The newly focused window instantly shrinks, then grows back to original "
 "along the chosen curve."
-msgstr ""
-"新聚焦窗口瞬间缩小，再按所选曲线放大回原样。"
+msgstr "新聚焦窗口瞬间缩小，再按所选曲线放大回原样。"
 
-#: prefs.js:92
+#: prefs.js:80
 msgid "Shrink ratio"
 msgstr "缩小比例"
 
-#: prefs.js:92
+#: prefs.js:80
 msgid "(1.0=none, 0.9=90%)"
 msgstr "（1.0=不缩，0.9=90%）"
 
-#: prefs.js:94
+#: prefs.js:82
 msgid "Zoom animation duration"
 msgstr "放大动画时长"
 
-#: prefs.js:96
+#: prefs.js:84
 msgid "Zoom easing curve"
 msgstr "放大缓动曲线"
+
+#~ msgid "Auto (away from focused window)"
+#~ msgstr "自动（远离焦点窗口）"
+
+#~ msgid "Bottom-right"
+#~ msgstr "右下"
+
+#~ msgid "Bottom-left"
+#~ msgstr "左下"
+
+#~ msgid "Top-right"
+#~ msgstr "右上"
+
+#~ msgid "Top-left"
+#~ msgstr "左上"
+
+#~ msgid "Push direction"
+#~ msgstr "推开方向"

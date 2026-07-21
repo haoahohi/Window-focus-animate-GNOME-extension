@@ -1,6 +1,6 @@
-// 窗口聚焦推移的首选项界面。GNOME Shell 45+（ESM 首选项）。
-// 多语言：英文为底本，菜单标签 / 行标题 / 描述均经 this.gettext() 包裹；
-// 翻译文件见 locale/<lang>/LC_MESSAGES/<uuid>.mo（由 po/ 下的 .po 编译生成）。
+// 窗口聚焦推移的设置界面（GNOME Shell 45+ 的 ESM 首选项）。
+// 多语言：英文是底本，下面这些菜单名 / 行标题 / 说明都套了 this.gettext()；
+// 翻译文件在 locale/<lang>/LC_MESSAGES/<uuid>.mo（由 po/ 下的 .po 编译而来）。
 
 import Adw from 'gi://Adw';
 import Gtk from 'gi://Gtk';
@@ -10,7 +10,7 @@ import {ExtensionPreferences} from 'resource:///org/gnome/Shell/Extensions/js/ex
 
 export default class WindowFocusSlidePreferences extends ExtensionPreferences {
     fillPreferencesWindow(window) {
-        // 初始化翻译域（domain = 扩展 uuid），使下方 this.gettext() 生效
+        // 准备好翻译域（domain = 扩展 uuid），这样下面才能用到翻译
         this.initTranslations();
         const settings = this.getSettings();
 
@@ -19,15 +19,6 @@ export default class WindowFocusSlidePreferences extends ExtensionPreferences {
             [this.gettext('Kwin style'), 'kwin'],
             [this.gettext('Linear rise'), 'rise'],
             [this.gettext('Zoom'), 'zoom'],
-        ];
-
-        // 推开方向
-        const DIRECTIONS = [
-            [this.gettext('Auto (away from focused window)'), 'auto'],
-            [this.gettext('Bottom-right'), 'bottom-right'],
-            [this.gettext('Bottom-left'), 'bottom-left'],
-            [this.gettext('Top-right'), 'top-right'],
-            [this.gettext('Top-left'), 'top-left'],
         ];
 
         // 上升 / 放大缓动曲线
@@ -62,9 +53,6 @@ export default class WindowFocusSlidePreferences extends ExtensionPreferences {
             settings, 'duration-ms', this.gettext('Animation duration'), this.gettext('milliseconds'), 50, 1500, 10));
         kwinGroup.add(this._spinRow(
             settings, 'auto-return-ms', this.gettext('Timed auto return'), this.gettext('milliseconds (0=off)'), 0, 5000, 50));
-        kwinGroup.add(this._comboRow(
-            settings, 'direction', this.gettext('Push direction'), DIRECTIONS,
-            (s, v) => s.set_string('direction', v)));
         kwinGroup.add(this._switchRow(
             settings, 'hover-return', this.gettext('Return on hover over revealed edge')));
 

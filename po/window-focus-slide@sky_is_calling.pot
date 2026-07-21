@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR sky_is_calling
-# This file is distributed under the same license as the window-focus-slide@sky_is_calling package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: window-focus-slide@sky_is_calling\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-20 13:07+0800\n"
+"POT-Creation-Date: 2026-07-20 20:59+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,146 +17,122 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: prefs.js:19 prefs.js:55
+#: prefs.js:19 prefs.js:46
 msgid "Kwin style"
 msgstr ""
 
-#: prefs.js:20 prefs.js:73
+#: prefs.js:20 prefs.js:61
 msgid "Linear rise"
 msgstr ""
 
-#: prefs.js:21 prefs.js:87
+#: prefs.js:21 prefs.js:75
 msgid "Zoom"
 msgstr ""
 
 #: prefs.js:26
-msgid "Auto (away from focused window)"
-msgstr ""
-
-#: prefs.js:27
-msgid "Bottom-right"
-msgstr ""
-
-#: prefs.js:28
-msgid "Bottom-left"
-msgstr ""
-
-#: prefs.js:29
-msgid "Top-right"
-msgstr ""
-
-#: prefs.js:30
-msgid "Top-left"
-msgstr ""
-
-#: prefs.js:35
 msgid "Linear (constant speed)"
 msgstr ""
 
-#: prefs.js:36
+#: prefs.js:27
 msgid "Ease-in (slow then fast)"
 msgstr ""
 
-#: prefs.js:37
+#: prefs.js:28
 msgid "Ease-out (fast then slow)"
 msgstr ""
 
-#: prefs.js:41
+#: prefs.js:32
 msgid "Focus push"
 msgstr ""
 
-#: prefs.js:46
+#: prefs.js:37
 msgid "General"
 msgstr ""
 
-#: prefs.js:49
+#: prefs.js:40
 msgid "Focus animation style"
 msgstr ""
 
-#: prefs.js:51
+#: prefs.js:42
 msgid "Enable"
 msgstr ""
 
-#: prefs.js:56
+#: prefs.js:47
 msgid ""
 "The unfocused window is pushed aside and stays, revealing its edge; it "
 "returns on focus-back / hover over the revealed edge / timed auto-return."
 msgstr ""
 
-#: prefs.js:60
+#: prefs.js:51
 msgid "Offset distance"
 msgstr ""
 
-#: prefs.js:60
+#: prefs.js:51
 msgid "pixels"
 msgstr ""
 
-#: prefs.js:62
+#: prefs.js:53
 msgid "Animation duration"
 msgstr ""
 
-#: prefs.js:62
+#: prefs.js:53
 msgid "milliseconds"
 msgstr ""
 
-#: prefs.js:64
+#: prefs.js:55
 msgid "Timed auto return"
 msgstr ""
 
-#: prefs.js:64
+#: prefs.js:55
 msgid "milliseconds (0=off)"
 msgstr ""
 
-#: prefs.js:66
-msgid "Push direction"
-msgstr ""
-
-#: prefs.js:69
+#: prefs.js:57
 msgid "Return on hover over revealed edge"
 msgstr ""
 
-#: prefs.js:74
+#: prefs.js:62
 msgid "The newly focused window rises into place along the chosen curve."
 msgstr ""
 
-#: prefs.js:78
+#: prefs.js:66
 msgid "Rise distance"
 msgstr ""
 
-#: prefs.js:78
+#: prefs.js:66
 msgid "pixels (0=none)"
 msgstr ""
 
-#: prefs.js:80
+#: prefs.js:68
 msgid "Rise animation duration"
 msgstr ""
 
-#: prefs.js:80 prefs.js:94
+#: prefs.js:68 prefs.js:82
 msgid "milliseconds (0=instant)"
 msgstr ""
 
-#: prefs.js:82
+#: prefs.js:70
 msgid "Rise easing curve"
 msgstr ""
 
-#: prefs.js:88
+#: prefs.js:76
 msgid ""
 "The newly focused window instantly shrinks, then grows back to original "
 "along the chosen curve."
 msgstr ""
 
-#: prefs.js:92
+#: prefs.js:80
 msgid "Shrink ratio"
 msgstr ""
 
-#: prefs.js:92
+#: prefs.js:80
 msgid "(1.0=none, 0.9=90%)"
 msgstr ""
 
-#: prefs.js:94
+#: prefs.js:82
 msgid "Zoom animation duration"
 msgstr ""
 
-#: prefs.js:96
+#: prefs.js:84
 msgid "Zoom easing curve"
 msgstr ""

@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <enum id="org.gnome.shell.extensions.window-focus-slide.Direction">
-    <value value="0" nick="auto"/>
-    <value value="1" nick="bottom-right"/>
-    <value value="2" nick="bottom-left"/>
-    <value value="3" nick="top-right"/>
-    <value value="4" nick="top-left"/>
-  </enum>
-
   <enum id="org.gnome.shell.extensions.window-focus-slide.FocusBumpStyle">
     <value value="0" nick="kwin"/>
     <value value="1" nick="rise"/>
@@ -31,11 +23,6 @@
       <default>200</default>
       <summary>动画时长</summary>
       <description>平移 / 回位动画的持续时间（毫秒），指数缓动。</description>
-    </key>
-    <key name="direction" enum="org.gnome.shell.extensions.window-focus-slide.Direction">
-      <default>'auto'</default>
-      <summary>推开方向</summary>
-      <description>auto = 远离当前焦点窗口的方向；其余为固定角落方向。</description>
     </key>
     <key name="enabled" type="b">
       <default>true</default>
